@@ -8,10 +8,10 @@
 $(call inherit-product, device/Infinix/Infinix-XPAD/Device.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Product Specifics
-PRODUCT_NAME := twrp_XPAD
+PRODUCT_NAME := pb_XPAD
 PRODUCT_DEVICE := Infinix-XPAD
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix XPAD
