@@ -158,3 +158,8 @@ TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone29/temp"
 TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge/power_supply/battery/capacity"
+
+# PBRP flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_PATCH_AVB2 := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
