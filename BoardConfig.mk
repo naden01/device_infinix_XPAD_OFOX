@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-XPAD
+DEVICE_PATH := device/Infinix/Infinix-XPAD
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := Infinix-XPAD
