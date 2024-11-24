@@ -5,7 +5,7 @@
 #
 
 # Inherit Infinix XPAD device stuff
-$(call inherit-product, device/Infinix/Device.mk)
+$(call inherit-product, device/Infinix/XPAD/Device.mk)
 
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
