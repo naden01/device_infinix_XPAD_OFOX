@@ -42,19 +42,3 @@ export LC_ALL="C"
 
 # instruct magiskboot v26+ to always patch the vbmeta header when patching the recovery/boot image; do *not* remove!
 export FOX_PATCH_VBMETA_FLAG=1
-
-cd bootable/recovery
-
-for p in ../../device/infinix/Infinix-XPAD/patches/*; do
-if ! git am -3 <$p; then
-    # Force use fuzzy patch
-    patch -p1 <$p
-    git add .
-    git am --continue || {
-        echo "Failed to apply $p"
-        exit 1
-    }
-fi
-done
-
-cd ../../
